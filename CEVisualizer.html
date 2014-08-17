@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Currency Exchange Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="CEVisualizer.css" /> 
+	<script type='text/javascript' src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type='text/javascript' src='CEVisualizer.js'></script>
+	<script type='text/javascript' src='currencyCountryList.js'></script>
+	<script type='text/javascript' src='geoCountryCurrencyMarker.js'></script>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			CEVisualizer.geoCountryCurrencyMarker.drawMapWithMarkers();
+		});
+	</script>
+</head>
+<body>
+    <div id="map_canvas" class="map"></div>
+</body>
+</html>
